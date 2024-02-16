@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="./images/tazbih.jpg" type="image/x-icon">
+    <!-- tailwing daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- css font family -->
+    <style>
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+    <!-- color code -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'increment-color': '#22c55e',
+                        'decrement-color': '#ef4444',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="container mx-auto text-center mt-10 px-9">
+        <h1 class=" text-4xl lg:text-7xl font-extrabold font-roboto"> <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-[#36bcf4] to-[#21abb6]">Digital</span> <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-[#1ba7a8] to-[#06976c]">Tasbih</span></h1>
+    </header>
+    <main>
+        <section class="container mx-auto text-center mt-10">
+            <!-- reset button for small device -->
+            <div class="mb-6 lg:hidden">
+                <button class="btn bg-[#eab308] text-white text-xl font-medium px-4 font-roboto" type="reset">Reset All
+                    Tasbih</button>
+            </div>
+            <div class="flex gap-6 lg:gap-0 flex-col lg:flex-row justify-between">
+
+                <!-- sub hanallah section -->
+                <div class="rounded-lg p-10 shadow-xl">
+                    <h1 class="text-5xl text-[#21abb6] font-bold font-roboto mb-4"> Subhan Allah</h1>
+                    <p class="text-4xl font-semibold font-roboto text-[#36bcf4] mb-4">0</p>
+                    <div class="space-x-4">
+                        <button class="btn bg-increment-color px-8 text-xl text-white font-medium">Incriment</button>
+                        <button class="btn bg-decrement-color px-8 text-xl text-white font-medium">Decriment</button>
+                    </div>
+                </div>
+
+                <!-- alhamdulillah section -->
+                <div class="rounded-lg p-10 shadow-xl">
+                    <h1 class="text-5xl text-[#06976c] font-bold font-roboto mb-4"> Alhamdulillah</h1>
+                    <p class="text-4xl font-semibold font-roboto text-[#1ba7a8] mb-4">0</p>
+                    <div class="space-x-4">
+                        <button class="btn bg-increment-color px-8 text-xl text-white font-medium">Incriment</button>
+                        <button class="btn bg-decrement-color px-8 text-xl text-white font-medium">Decriment</button>
+                    </div>
+                </div>
+
+                <!-- allahuakbar section -->
+                <div class="rounded-lg p-10 shadow-xl">
+                    <h1 class="text-5xl text-[#36bcf4] font-bold font-roboto mb-4"> Subhan Allah</h1>
+                    <p class="text-4xl font-semibold font-roboto text-[#06976c] mb-4">0</p>
+                    <div class="space-x-4">
+                        <button
+                            class="btn bg-increment-color px-8 text-xl text-white font-medium font-roboto">Incriment</button>
+                        <button
+                            class="btn bg-decrement-color px-8 text-xl text-white font-medium font-roboto">Decriment</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card section ends -->
+
+            <!-- reset button -->
+            <div class="mt-7 hidden lg:flex justify-center">
+                <button class="btn bg-[#eab308] text-white text-xl font-medium px-4 font-roboto" type="reset">Reset All
+                    Tasbih</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
