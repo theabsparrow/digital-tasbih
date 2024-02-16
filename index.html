@@ -46,41 +46,39 @@
     <main>
         <section class="container mx-auto text-center mt-10">
             <!-- reset button for small device -->
-            <div class="mb-6 lg:hidden">
-                <button class="btn bg-[#eab308] text-white text-xl font-medium px-4 font-roboto" type="reset">Reset All
+            <div class="mb-4 sticky top-[0px] lg:hidden">
+                <button id="reset-button-mobile" class="btn bg-[#eab308] text-white text-xl font-medium px-4 font-roboto" type="reset">Reset All
                     Tasbih</button>
             </div>
             <div class="flex gap-6 lg:gap-0 flex-col lg:flex-row justify-between">
 
-                <!-- sub hanallah section -->
+                <!-- subhanallah section -->
                 <div class="rounded-lg p-10 shadow-xl">
                     <h1 class="text-5xl text-[#21abb6] font-bold font-roboto mb-4"> Subhan Allah</h1>
-                    <p class="text-4xl font-semibold font-roboto text-[#36bcf4] mb-4">0</p>
+                    <p id="subahanallah-number" class="text-4xl font-semibold font-roboto text-[#36bcf4] mb-4">0</p>
                     <div class="space-x-4">
-                        <button class="btn bg-increment-color px-8 text-xl text-white font-medium">Incriment</button>
-                        <button class="btn bg-decrement-color px-8 text-xl text-white font-medium">Decriment</button>
+                        <button id="subahanallah-incriment" class="btn bg-increment-color px-8 text-xl text-white font-medium font-roboto">Incriment</button>
+                        <button id="subahanallah-decriment" class="btn bg-decrement-color px-8 text-xl text-white font-medium font-roboto">Decriment</button>
                     </div>
                 </div>
 
                 <!-- alhamdulillah section -->
                 <div class="rounded-lg p-10 shadow-xl">
                     <h1 class="text-5xl text-[#06976c] font-bold font-roboto mb-4"> Alhamdulillah</h1>
-                    <p class="text-4xl font-semibold font-roboto text-[#1ba7a8] mb-4">0</p>
+                    <p id="alhamdulillah-number" class="text-4xl font-semibold font-roboto text-[#1ba7a8] mb-4">0</p>
                     <div class="space-x-4">
-                        <button class="btn bg-increment-color px-8 text-xl text-white font-medium">Incriment</button>
-                        <button class="btn bg-decrement-color px-8 text-xl text-white font-medium">Decriment</button>
+                        <button id="alhamdulillah-incriment" class="btn bg-increment-color px-8 text-xl text-white font-medium font-roboto">Incriment</button>
+                        <button id="alhamdulillah-decriment" class="btn bg-decrement-color px-8 text-xl text-white font-medium font-roboto">Decriment</button>
                     </div>
                 </div>
 
                 <!-- allahuakbar section -->
                 <div class="rounded-lg p-10 shadow-xl">
                     <h1 class="text-5xl text-[#36bcf4] font-bold font-roboto mb-4"> Subhan Allah</h1>
-                    <p class="text-4xl font-semibold font-roboto text-[#06976c] mb-4">0</p>
+                    <p id="allahuakbar-number" class="text-4xl font-semibold font-roboto text-[#06976c] mb-4">0</p>
                     <div class="space-x-4">
-                        <button
-                            class="btn bg-increment-color px-8 text-xl text-white font-medium font-roboto">Incriment</button>
-                        <button
-                            class="btn bg-decrement-color px-8 text-xl text-white font-medium font-roboto">Decriment</button>
+                        <button id="allahuakbar-incriment" class="btn bg-increment-color px-8 text-xl text-white font-medium font-roboto">Incriment</button>
+                        <button id="allahuakbar-decriment" class="btn bg-decrement-color px-8 text-xl text-white font-medium font-roboto">Decriment</button>   
                     </div>
                 </div>
             </div>
@@ -88,11 +86,14 @@
 
             <!-- reset button -->
             <div class="mt-7 hidden lg:flex justify-center">
-                <button class="btn bg-[#eab308] text-white text-xl font-medium px-4 font-roboto" type="reset">Reset All
+                <button id="reset-button" class="btn bg-[#eab308] text-white text-xl font-medium px-4 font-roboto" type="reset">Reset All
                     Tasbih</button>
             </div>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 
-</html>
+</html>  
+                            
+                    
